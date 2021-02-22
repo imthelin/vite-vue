@@ -1,0 +1,21 @@
+/*
+ * @Description: 
+ * @Author: GangLin.Chen
+ * @Date: 2021-02-22 13:45:42
+ * @LastEditors: OBKoro1
+ * @LastEditTime: 2021-02-22 13:45:58
+ * @FilePath: /vite-vue/postcss.config.js
+ * @filePathColon: \\
+ */
+
+module.exports = {
+  "plugins": {
+    "postcss-pxtorem": {
+      rootValue: 37.5, 
+      // Vant 官方根字体大小是 37.5
+      propList: ['*'],
+      selectorBlackList: ['.norem'] 
+      // 过滤掉.norem-开头的class，不进行rem转换
+    }
+  }
+}
