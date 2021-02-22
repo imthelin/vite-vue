@@ -8,5 +8,5 @@ import './utils/rem.ts'
 createApp(App)
   .use(router)
   .use(store)
-  .use(ant)
+  // .use(vant)
   .mount('#app')
