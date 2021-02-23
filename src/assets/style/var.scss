@@ -1,0 +1,47 @@
+$blue:#324157;
+$light-blue:#3A71A8;
+$red:#C03639;
+$pink: #E65D6E;
+$green: #30B08F;
+$tiffany: #4AB7BD;
+$yellow:#FEC171;
+$panGreen: #30B08F;
+
+// 主要内容区域背景
+$mainBg:#f6f7fb;
+
+// 主题色
+$mainColor: gray;
+
+// 侧边栏背景（一、二级菜单背景颜色，hover颜色）
+$menuBg:white;
+$menuHover:#f1f3ff;
+$subMenuBg:white;
+$subMenuHover:#f1f3ff;
+
+// 侧边栏文本颜色（原本颜色、激活状态颜色、二级菜单激活颜色）
+$menuText: #909eb4;
+$menuActiveText:#9A4DFF;
+$subMenuActiveText:#666666;
+$subMenuActiveIcon:#9A4DFF;
+
+// 侧边栏宽度
+$sideBarWidth: 180px;
+// 顶部导航
+$navBarHeight: 50px;
+$tagViewHeight: 34px;
+
+:export {
+    mainColor: $mainColor;
+    menuText: $menuText;
+    menuActiveText: $menuActiveText;
+    subMenuActiveText: $subMenuActiveText;
+    subMenuActiveIcon: $subMenuActiveIcon;
+    menuBg: $menuBg;
+    menuHover: $menuHover;
+    subMenuBg: $subMenuBg;
+    subMenuHover: $subMenuHover;
+    sideBarWidth: $sideBarWidth;
+    navBarHeight: $navBarHeight;
+    tagViewHeight: $tagViewHeight;
+}
