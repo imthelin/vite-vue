@@ -1,21 +1,21 @@
 <!--
  * @Description: 
  * @Author: GangLin.Chen
- * @Date: 2021-02-22 13:23:33
- * @LastEditors: OBKoro1
- * @LastEditTime: 2021-02-22 16:25:07
- * @FilePath: /vite-vue/src/views/Home/index.vue
+ * @Date: 2021-02-23 13:35:03
+ * @LastEditors: GangLin.Chen
+ * @LastEditTime: 2021-02-23 14:10:50
+ * @FilePath: /vite-vue/src/views/Todo/index.vue
  * @filePathColon: \\
 -->
 <template>
-  <div class="index">
-    home
+  <div class="todo-index">
+    todo
   </div>
 </template>
 
-<script lang="ts">
+<script>
 export default {
-  name: 'HomeIndex',
+  name: 'TodoIndex',
 
   components: {},
 
@@ -35,6 +35,7 @@ export default {
 
   mounted () {},
 
+  beforeDestroy () {},
 
   methods: {}
 }
@@ -43,3 +44,4 @@ export default {
 <style scoped lang="scss">
 
 </style>
+

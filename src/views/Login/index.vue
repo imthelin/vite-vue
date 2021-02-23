@@ -3,13 +3,13 @@
  * @Author: GangLin.Chen
  * @Date: 2021-02-22 13:23:40
  * @LastEditors: OBKoro1
- * @LastEditTime: 2021-02-22 13:23:40
+ * @LastEditTime: 2021-02-22 16:20:53
  * @FilePath: /vite-vue/src/views/Login/index.vue
  * @filePathColon: \\
 -->
 <template>
   <div class="index">
-    
+    login
   </div>
 </template>
 
@@ -35,13 +35,12 @@ export default {
 
   mounted () {},
 
-  beforeDestroy () {},
 
   methods: {}
 }
 </script>
 
-<style scoped lang="sass">
+<style scoped lang="scss">
 
 </style>
 
