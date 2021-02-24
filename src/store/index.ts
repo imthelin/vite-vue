@@ -2,8 +2,8 @@
  * @Description:
  * @Author: GangLin.Chen
  * @Date: 2021-02-22 13:37:20
- * @LastEditors: GangLin.Chen
- * @LastEditTime: 2021-02-24 19:49:48
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2021-02-25 00:35:53
  * @FilePath: /vite-vue/src/store/index.ts
  * @filePathColon: \\
  */
@@ -12,8 +12,7 @@ import todoModule from './modules/todo';
 export default createStore({
   state: {
     listData: { 1: 10 },
-    num: 10,
-    todoData: [{ value: 'way to ex' }, { value: '2 way to ex' }],
+    num: 10
   },
   mutations: {
     setData(state, value) {

@@ -3,7 +3,7 @@
   .route-link{
     color: $mainColor;
     &:hover{
-      color: lightblue;
+      color: $btnHover;
     }
   }
 }

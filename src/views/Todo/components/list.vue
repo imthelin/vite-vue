@@ -2,18 +2,18 @@
  * @Description: 
  * @Author: GangLin.Chen
  * @Date: 2021-02-24 19:26:29
- * @LastEditors: GangLin.Chen
- * @LastEditTime: 2021-02-24 19:42:27
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2021-02-25 01:02:38
  * @FilePath: /vite-vue/src/views/Todo/components/list.vue
  * @filePathColon: \\
 -->
 <template>
   <div class="list">
     <div class="todo" v-for="(todo, index) in todoData" :key="todo.value">
-      <div class="todo-pre">{{index}}:</div>
-      <div class="todo-value">{{todo.value}}</div>
+      <div class="todo-pre">{{ index }}:</div>
+      <div class="todo-value">{{ todo.value }}</div>
       <div class="todo-op">
-        <div class="close">x</div>
+        <div class="close" @click="remove(index)">x</div>
       </div>
     </div>
   </div>
@@ -35,7 +35,7 @@ export default {
 
   computed: {
     todoData() {
-      return this.$store.state.todoData;
+      return this.$store.state.todo.todoData;
     },
   },
 
@@ -47,22 +47,29 @@ export default {
 
   beforeDestroy() {},
 
-  methods: {},
+  methods: {
+    remove(index) {
+      this.$store.dispatch('todo/removeTodo', index);
+    },
+  },
 };
 </script>
 
 <style lang="scss"></style>
 <style lang="scss" scoped>
-.list{
+.list {
   width: 100%;
-  .todo{
+  height: 220px;
+  overflow: auto;
+  .todo {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-top: 6px;
-    .todo-op{
-      .close{
-        &:hover{
-          color: #d31717
+    padding: 10px 10px;
+    .todo-op {
+      .close {
+        &:hover {
+          color: #d31717;
         }
       }
     }

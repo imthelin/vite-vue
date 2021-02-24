@@ -12,6 +12,7 @@ $mainBg:#f6f7fb;
 
 // 主题色
 $mainColor: gray;
+$btnHover: lightblue;
 
 // 侧边栏背景（一、二级菜单背景颜色，hover颜色）
 $menuBg:white;
@@ -44,4 +45,5 @@ $tagViewHeight: 34px;
     sideBarWidth: $sideBarWidth;
     navBarHeight: $navBarHeight;
     tagViewHeight: $tagViewHeight;
+    btnHover: $btnHover;
 }
