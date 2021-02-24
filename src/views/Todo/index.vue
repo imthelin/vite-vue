@@ -3,7 +3,7 @@
  * @Author: GangLin.Chen
  * @Date: 2021-02-23 13:35:03
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-02-25 00:58:34
+ * @LastEditTime: 2021-02-25 01:26:41
  * @FilePath: /vite-vue/src/views/Todo/index.vue
  * @filePathColon: \\
 -->
@@ -70,6 +70,7 @@ export default {
   padding: 20px;
   margin: 0 auto;
   background-color: $menuText;
+  color: #171717;
   .input-wrapper {
     width: 100%;
     height: 20px;
@@ -81,13 +82,17 @@ export default {
     overflow: hidden;
     .input {
       width: 100%;
+      border-style: hidden;
+      padding-left: 0.2rem;
     }
     .add-btn {
       width: 20px;
       height: 100%;
       background-color: $btnHover;
       text-align: center;
+      transition: all .5s ease-out;
       &:hover{
+        width: 25px;
         background-color: $subMenuHover;
       }
     }
