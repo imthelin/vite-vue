@@ -1,34 +1,34 @@
 /*
- * @Description: 
+ * @Description:
  * @Author: GangLin.Chen
  * @Date: 2021-02-22 13:37:20
  * @LastEditors: GangLin.Chen
- * @LastEditTime: 2021-02-24 19:41:26
+ * @LastEditTime: 2021-02-24 19:49:48
  * @FilePath: /vite-vue/src/store/index.ts
  * @filePathColon: \\
  */
-import { createStore } from "vuex";
+import { createStore } from 'vuex';
+import todoModule from './modules/todo';
 export default createStore({
   state: {
-    listData:{1:10},
+    listData: { 1: 10 },
     num: 10,
-    todoData: [
-      { value: 'way to ex' },
-      { value: '2 way to ex' },
-    ]
+    todoData: [{ value: 'way to ex' }, { value: '2 way to ex' }],
   },
   mutations: {
-    setData(state,value){
-        state.listData=value
+    setData(state, value) {
+      state.listData = value;
     },
-    addNum(state){
-      state.num=state.num+10
-    }
+    addNum(state) {
+      state.num = state.num + 10;
+    },
   },
   actions: {
-    setData(context,value){
-      context.commit('setData',value)
+    setData(context, value) {
+      context.commit('setData', value);
     },
   },
-  modules: {}
+  modules: {
+    todo: todoModule,
+  },
 });
